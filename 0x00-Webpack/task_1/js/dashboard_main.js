@@ -13,7 +13,7 @@ let count = 0;
 
 // Function to update the counter
 function updateCounter() {
-    count++;
+    count +=1;
     $('#count').text(`${count} clicks on the button`);
 }
 
