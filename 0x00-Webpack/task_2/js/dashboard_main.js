@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import _ from 'lodash';
 import '../css/main.css'; // Import CSS file
+import logo from '../assets/holberton-logo.jpg';
 
 // Function to update counter
 function updateCounter() {
@@ -15,7 +16,7 @@ const debouncedUpdateCounter = _.debounce(updateCounter(), 300);
 
 $(document).ready(function() {
   // Add logo element with background image
-  $('body').prepend('<div id="logo"></div>');
+  $('body').prepend(`<div id="logo" style="background-image: url(${logo})"></div>`);
   $('#logo').css('background-image', 'url(../assets/holberton-logo.jpg)');
 
   // Add other elements
