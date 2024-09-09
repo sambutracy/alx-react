@@ -1,12 +1,10 @@
-import React from 'react';
-import './Notifications.css';
+export const getFullYear = () => {
+  return new Date().getFullYear()
+}
 
-const Notifications = () => {
-  return (
-    <div className='Notifications'>
-      <p>Here is the list of notifications</p>
-    </div>
-  );
-};
-
-export default Notifications;
+export const getFooterCopy = (isIndex) => {
+  if (isIndex) {
+      return "Holberton School"
+  }
+  return "Holberton School main dashboard"
+}
