@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import './BodySection.css';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import "./BodySection.css";
 
 class BodySection extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class BodySection extends Component {
   render() {
     const { children, title } = this.props;
     return (
-      <div className='bodySection'>
+      <div className="bodySection">
         <h2>{title}</h2>
         {children}
       </div>
@@ -19,7 +19,7 @@ class BodySection extends Component {
 }
 
 BodySection.defaultProps = {
-  title: '',
+  title: "",
 };
 
 BodySection.propTypes = {

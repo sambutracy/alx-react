@@ -1,16 +1,14 @@
+:root {
+  --main-color: #e01d3f;
+}
+
 .header {
-    display: flex;
-    color: #e0344a;
-    align-items: center;
-    border-bottom: thick solid #e0344a;
-    width: 100%;
-    position: fixed;
-  }
-  
-  .header img {
-    width: 144px;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.header img {
+  width: 200px;
+}
